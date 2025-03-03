@@ -1,8 +1,6 @@
 import os
 
 
-path = "files"
-
 def list_directories(path):
     print("Directories:")
     for item in os.listdir(path):
@@ -20,7 +18,7 @@ def list_all(path):
     for item in os.listdir(path):
         print(item)
 
-path = input("Enter the path: ")
+path = 'files'
 if os.path.exists(path):
     list_directories(path)
     list_files(path)
